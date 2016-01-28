@@ -1,0 +1,14 @@
+1 ipkg-package ist die datei wo alle unsere information + program die instaliert werden müssen dran stehen..
+
+mit sh v6.sh 
+die skript generiert ein neues "syso_system.ipkg" und kopiert ind srv/http/syso/2
+
+also wenn man was verändert einfach v6.sh ausführen :)
+
+es funktioniert schon!!
+
+############# QEMU ############################
+
+sh bin/start_test_for_ipkg.sh
+
+

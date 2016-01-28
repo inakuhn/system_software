@@ -1,0 +1,23 @@
+#!/bin/busybox sh
+
+/bin/busybox --install -s /bin
+
+# Mount devices
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t tmpfs tmp /tmp
+mount -t devpts devpts /dev/pts 
+mdev -s
+
+sleep 5
+# Setup udhcp
+ifconfig eth0 up
+udhcpc -i eth0 -s /etc/simple.script
+# Setup Loopback Interface
+ifconfig lo 127.0.0.1
+/bin/helloInit
+
+
+telnetd -l /bin/ash
+exec /bin/busybox /bin/ash
+

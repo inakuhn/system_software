@@ -1,0 +1,20 @@
+ssh user@192.168.29.76
+ssh-keygen -f "/home/rabertol/.ssh/known_hosts" -R 192.168.29.76 && ssh user@192.168.29.76
+sftp user@192.168.29.76
+scp buf.ko user@192.168.29.76:/usr/bin/buf.ko
+ mehr schrieben 
+ warte solang der andere 
+ 5 willst 10 5 zu viel -> schreibst 5 und warte bis es schrieben kannst
+ 
+echo "hallo"
+1 fall ich schreibe 
+	hat platz passt schrieben
+	
+
+2 fall
+	hat kein platz nicht alles hat platz
+	schreibt man des was platz ist 
+	warte wait queue 
+	sobald eine gelesen hat 
+	hat sich die größe von qeue verändernt
+	dann kann ich wieder schreiben

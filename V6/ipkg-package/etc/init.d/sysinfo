@@ -1,0 +1,11 @@
+#!/bin/busybox sh
+# skript goes to systinfo and start it
+#
+#
+echo "##############################################"
+echo "#             Starting Sysinfo...            #"
+echo "##############################################"
+/bin/systeminfo
+echo "##############################################"
+echo "# Finisched with sysinfo! Thanks for waiting #"
+echo "##############################################"

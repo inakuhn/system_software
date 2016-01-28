@@ -1,0 +1,28 @@
+#!/bin/busybox sh
+echo "startin busy box"
+
+# Mount devices
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t tmpfs tmp /tmp
+mount -t devtmpfs none /dev
+mount -t devpts devpts /dev/pts
+
+sleep 3
+# Setup udhcp
+ifconfig eth0 up
+udhcpc -i eth0 -s /etc/simple.script
+# Setup Loopback Interface
+ifconfig lo 127.0.0.1
+/bin/helloInit
+
+/etc/init.d/S50dropbear start
+echo "##############################################"
+echo "#               cleaing Up dmesg -c          #"
+echo "##############################################"
+dmesg -c
+echo "##############################################"
+echo "#               Done dmesg -c                #"
+echo "##############################################"
+exec /bin/busybox sh
+

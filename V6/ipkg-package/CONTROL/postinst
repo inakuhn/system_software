@@ -1,0 +1,15 @@
+#!/bin/sh
+# after installation run script sysinfo
+#
+#
+
+echo "##############################################"
+echo "#   Runing installation scripts....          #"
+echo "##############################################"
+sh etc/init.d/sysinfo
+
+echo "##############################################"
+echo "#    Postinst Finish sucess!                 #"
+echo "##############################################"
+
+exit 0

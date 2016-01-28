@@ -1,0 +1,19 @@
+config BR2_PACKAGE_SYSO
+        bool "syso"
+        help
+          All Syso Packages
+
+
+if BR2_PACKAGE_SYSO
+        menu "Modules"
+        	source package/syso/buf/Config.in
+			source package/syso/timer/Config.in
+			source package/syso/kthread/Config.in
+			source package/syso/tasklet/Config.in
+			source package/syso/myzero/Config.in			
+			source package/syso/wq/Config.in
+			source package/syso/lock/Config.in
+			source package/syso/template/Config.in
+			source package/syso/open_once/Config.in
+        endmenu
+endif

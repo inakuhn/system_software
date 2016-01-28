@@ -1,0 +1,10 @@
+Package: systeminfo
+Priority: optional
+Filename: ./syso_systeminfo.ipkg
+Size: 795
+MD5sum: 4294967295
+Description: Dieses Package ist von Gruppe 10
+Maintainer: silvia goetti <sigoetti@htwg-konstanz.de>
+Source: http://192.168.29.1:8000/syso/2
+Version: 1.0
+Architecture: arm
