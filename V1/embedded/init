@@ -1,0 +1,14 @@
+#!/bin/busybox sh
+
+/bin/busybox --install -s /bin
+
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t tmpfs tmp /tmp
+
+
+/bin/helloinit
+
+
+exec /bin/busybox sh
+

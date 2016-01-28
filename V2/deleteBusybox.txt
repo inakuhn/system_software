@@ -1,0 +1,43 @@
+ Busybox Settings  --->  General Configuration  --->
+Use the devpts filesystem for Unix98 PTYs 
+Support for SUID/SGID handling 
+Build Options  ---> 
+Build with Large File Support (for accessing files > 2 GB) 
+Coreutils  ---> 
+cat
+Extend test to 64 bit 
+cp
+Enable filetyping options (-p and -F)                                                                
+Enable symlinks dereferencing (-L)                                                                                                               
+Enable recursion (-R)
+mknod
+pwd
+rm
+rmdir
+sleep
+stty
+tty
+Login/Password Management Utilities  --->
+ login 
+Linux System Utilities  ---> 
+dmesg
+lscpi
+unmount
+Miscellaneous Utilities  ---> 
+less
+Networking Utilities  --->
+arp
+inetd
+ip tunnel 
+ip tunnel                                                                                                                                        
+ip rule 
+netstat
+                                                                                                              
+ Support short forms of ip commands   
+ 
+ 
+ 
+ cttyhack
+ POSIX math support
+ Hide message on interactive shell 
+ Use $HISTFILESIZE 

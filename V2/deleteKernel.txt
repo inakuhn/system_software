@@ -1,0 +1,74 @@
+ > General setup
+Enable process_vm_readv/writev syscalls 
+Support initial ramdisks compressed using XZ 
+Use full shmem filesystem
+Embedded system
+//TODO Verbersenn Configure standard kernel features (expert users) 
+Enable SLUB debugging support 
+ > System Type
+Enable kuser helpers in vector page 
+
+Enable the L2x0 outer cache controller
+
+ > Kernel Features 
+ Allow for memory compaction 
+ > Boot options 
+Use appended device tree blob to zImage (EXPERIMENTAL) 
+ > Networking support > Networking options 
+ Unix domain sockets 
+ IP: IPsec transport mode 
+ IP: IPsec tunnel mode
+ IP: IPsec BEET mode 
+ Large Receive Offload (ipv4/tcp) 
+ INET: socket monitoring interface
+ The IPv6 protocol  ----
+ 
+
+> Device Drivers > Network device support
+ Network core driver support
+> Device Drivers > Network device support > Ethernet driver support
+ ARC devices 
+ Cadence devices
+ Broadcom devices
+ Cirrus devices
+ EZchip devices
+ Faraday devices
+ Hisilicon devices
+ Intel devices 
+ Marvell devices
+ Micrel devices
+ National Semi-conductor devices
+ Qualcomm devices
+ Renesas devices
+ Rocker devices 
+ Samsung Ethernet devices
+ SEEQ devices
+ SMC 91C9x/91C1xxx support
+ SMSC LAN911[5678] support 
+ STMicroelectronics devices
+ VIA devices  
+ WIZnet devices
+ 
+ > Device Drivers
+ IOMMU Hardware Support  ---- 
+ > File systems
+Network File Systems  ---> 
+ > Kernel hacking
+ Collect scheduler debugging info 
+ Enable stack unwinding support (EXPERIMENTAL)  
+> Cryptographic API
+Null algorithms 
+Encrypted Chain IV Generator 
+HMAC support
+NIST SP800-90A DRBG  ---> 
+Jitterentropy Non-Deterministic Random Number Generator
+ Hardware crypto devices  ----
+Cryptographic algorithm manager 
+SHA224 and SHA256 digest algorithm
+Networking support
+Wireless
+(yes)
+> Networking support > Networking options 
+Network packet filtering framework (Netfilter)
+UNIX: socket monitoring interface  
+------------commited---------------------
